@@ -1,0 +1,11 @@
+.expenses {
+
+  &__actionAdd {
+    display: flex;
+    justify-content: right;
+    margin: 15px 0;
+    &btn {
+      margin-right: 53px;
+    }
+  }
+}

@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { MatBottomSheet } from '@angular/material/bottom-sheet';
 import { Launch } from 'src/app/shared/models/launchs';
+import { RegisterLaunchComponent } from './register-launch/register-launch.component';
 
 @Component({
   selector: 'app-home-expenses',
@@ -35,9 +37,13 @@ export class HomeExpensesComponent implements OnInit {
     },
   ];
 
-  constructor() { }
+  constructor(private _bottomSheet: MatBottomSheet) { }
 
   ngOnInit(): void {
+  }
+
+  openBottomSheet(): void {
+    this._bottomSheet.open(RegisterLaunchComponent);
   }
 
 }

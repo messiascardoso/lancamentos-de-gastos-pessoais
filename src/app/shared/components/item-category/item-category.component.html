@@ -3,17 +3,11 @@
     <app-icon-category [iconName]="'restaurant'" [color]="'red'"></app-icon-category>
   </div>
   <div class="category__col2 categoryDescription">
-    <p class=" m-0 text-size--uxs">
-      <span class="categoryInfo__date text-semi-bold">{{ launch?.date }}</span> - <span class="categoryInfo__category text-color--500">{{ launch?.idCategoria }}</span>
-    </p>
     <p class="text-semi-bold m-0">
-      {{ launch?.description }}
+      {{ categoryItem?.name }}
     </p>
   </div>
   <div class="category__col3">
-    <p class="category__value  text-bold m-0">
-      {{ launch?.value | currency }}
-    </p>
     <p class="category__actions m-0">
       <button mat-icon-button class="" aria-label="Editar">
           <mat-icon>edit</mat-icon>

@@ -8,12 +8,15 @@
     border-bottom: solid 1px #5f7290;
     display: flex;
     align-items: center;
-    color: #ffff;
+    color: #5f7290;
     transition: all 0.5s;
 
     &:hover {
-      color: #5f7290;
+      color: #4e5f79;
     }
+  }
+  &__active {
+    color: #ffff;
   }
   &__link {
     text-decoration: none;

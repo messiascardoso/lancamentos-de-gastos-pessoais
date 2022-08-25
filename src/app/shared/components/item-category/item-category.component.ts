@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Category } from '../../models/category';
 
 @Component({
   selector: 'app-item-category',
@@ -7,7 +8,7 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 })
 export class ItemCategoryComponent implements OnInit {
 
-  @Input() category = {};
+  @Input() categoryItem!:Category;
   @Output() eventDelete = new EventEmitter();
   @Output() eventEdit = new EventEmitter();
 

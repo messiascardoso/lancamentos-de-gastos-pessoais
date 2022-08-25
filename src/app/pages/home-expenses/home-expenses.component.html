@@ -1,3 +1,10 @@
-<app-launch-type-description *ngFor="let item of launchs" [launch]="item">
-</app-launch-type-description>
+<div class="l-container">
+  <div class="expenses__actionAdd">
+    <button mat-mini-fab class="expenses__actionAddbtn" (click)="openBottomSheet()"><mat-icon>add</mat-icon></button>
+  </div>
+  <section>
+    <app-launch-type-description *ngFor="let item of launchs" [launch]="item">
+    </app-launch-type-description>
+  </section>
+</div>
 

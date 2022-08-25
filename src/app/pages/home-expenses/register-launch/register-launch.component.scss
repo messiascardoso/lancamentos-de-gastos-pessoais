@@ -1,0 +1,29 @@
+.registerLaunch {
+  height: 80vh;
+  padding: 30px;
+  // width: 500px;
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &Form {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    &__item {
+      width: 100%;
+      max-width: 300px;
+    }
+    &Submit {
+      display: flex;
+      justify-content: right;
+
+      &__btn {
+        margin-right: 51px;
+      }
+    }
+  }
+
+}

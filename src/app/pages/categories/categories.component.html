@@ -1,1 +1,12 @@
-<p>categories works!</p>
+<div class="l-container">
+  <section class="categories">
+    <div class="categories__actionAdd">
+      <button mat-mini-fab class="categories__actionAddbtn" (click)="openBottomSheet()"><mat-icon>add</mat-icon></button>
+    </div>
+    <app-item-category
+    *ngFor="let item of categories"
+    [categoryItem]="item"
+    >
+    </app-item-category>
+  </section>
+</div>
