@@ -1,0 +1,26 @@
+<div class="launchType">
+  <div class="launchType__col1 d-flex">
+    <app-icon-category [iconName]="'restaurant'" [color]="'red'"></app-icon-category>
+  </div>
+  <div class="launchType__col2 launchTypeDescription">
+    <p class=" m-0 text-size--uxs">
+      <span class="launchTypeInfo__date text-semi-bold">{{ launch?.date }}</span> - <span class="launchTypeInfo__category text-color--500">{{ launch?.idCategoria }}</span>
+    </p>
+    <p class="text-semi-bold m-0">
+      {{ launch?.description }}
+    </p>
+  </div>
+  <div class="launchType__col3">
+    <p class="launchType__value  text-bold m-0">
+      {{ launch?.value | currency }}
+    </p>
+    <p class="launchType__actions m-0">
+      <button mat-icon-button class="" aria-label="Editar">
+          <mat-icon>edit</mat-icon>
+      </button>
+      <button mat-icon-button class="" aria-label="Deletar">
+          <mat-icon color="warn" >delete</mat-icon>
+      </button>
+    </p>
+  </div>
+</div>

@@ -1,0 +1,50 @@
+.text-bold {
+  font-weight: 700;
+}
+
+.text-semi-bold {
+  font-weight: 500;
+}
+
+// Cria classes de cores
+
+$colors: (
+  900: #2b374a,
+  800: #3e4c62,
+  700: #4e5f79,
+  600: #5f7290,
+  500: #6d81a2,
+  400: #8394b2,
+  300: #98a8c3,
+  200: #98a8c3,
+  100: #cedaed,
+  50: #eaefff
+);
+
+@each $name, $color in $colors {
+  .text-color--#{$name} {
+    color: $color;
+  }
+}
+
+// Cria classes de sizes
+
+$sizes: (
+  uxs: 12px,
+  xxs: 14px,
+  xs: 16px,
+  sm: 18px,
+  sml: 20px,
+  md: 22px,
+  mdl: 24px,
+  lg: 28px,
+  xl: 32px,
+  xlg: 42px,
+  xxl: 48px
+);
+
+@each $name, $size in $sizes {
+  .text-size--#{$name} {
+    font-size: $size;
+  }
+}
