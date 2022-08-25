@@ -55,7 +55,7 @@ $my-theme-secundary: (
   200: #b4c1d8,
   300: #98a8c3,
   400: #8394b2,
-  500:#6d81a2,
+  500: #2b374a,//#6d81a2
   600: #5f7290,
   700: #4e5f79,
   800: #3e4c62,
@@ -87,8 +87,8 @@ $my-theme-secundary: (
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$candy-app-primary: mat-palette($my-theme-primary);
-$candy-app-accent:  mat-palette($my-theme-secundary, A200, A100, A400);
+$candy-app-primary: mat-palette($my-theme-secundary);
+$candy-app-accent:  mat-palette($my-theme-primary, A200, A100, A400);
 
 // The warn palette is optional (defaults to red).
 $candy-app-warn:    mat-palette($mat-red);

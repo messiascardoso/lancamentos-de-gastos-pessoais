@@ -6,11 +6,12 @@
     Gastos Pessoais
   </mat-toolbar>
   <mat-sidenav-container class="layoutContainer">
-    <mat-sidenav #sidenav mode="side" opened [fixedInViewport]="false" class="layoutSidenav">
+    <mat-sidenav #sidenav mode="side" [fixedInViewport]="false" class="layoutSidenav">
+      <app-menu-navbar [menuList]="menuList"></app-menu-navbar>
     </mat-sidenav>
     <mat-sidenav-content>
       <router-outlet></router-outlet>
     </mat-sidenav-content>
   </mat-sidenav-container>
-  <mat-toolbar class="layoutFooter" color="primary"></mat-toolbar>
+  <!-- <mat-toolbar class="layoutFooter" color="primary"></mat-toolbar> -->
 </ng-container>

@@ -1,0 +1,15 @@
+<nav>
+  <ul class="menuNavbar">
+    <li class="menuNavbar__item" *ngFor="let item of menuList">
+      <span class="menuNavbar__link-icon">
+        <mat-icon>{{item.icon}}</mat-icon>
+      </span>
+      <a class="menuNavbar__link"
+        [routerLink]="[item.path]"
+        routerLinkActive="router-link-active"
+      >
+      {{ item.name }}
+      </a>
+    </li>
+  </ul>
+</nav>

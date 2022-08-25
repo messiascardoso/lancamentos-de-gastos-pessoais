@@ -7,10 +7,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { ReactiveFormsModule } from '@angular/forms';
 import { MaterialModule } from './shared/material/material.module';
+import { MenuNavbarComponent } from './core/components/menu-navbar/menu-navbar.component';
+import { CategoriesComponent } from './pages/categories/categories.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    MenuNavbarComponent,
+    CategoriesComponent,
   ],
   imports: [
     BrowserModule,

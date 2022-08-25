@@ -1,0 +1,55 @@
+.category {
+  display: grid;
+  grid-template-columns: 40px 1fr 102px;
+  grid-gap: 7px;
+  padding: 8px;
+  border-bottom: solid 1px #dede;
+
+  &__col1 {
+    align-items: center;
+  }
+
+  &__col2 {
+    align-items: center;
+  }
+
+  &__col3 {
+    align-items: center;
+    justify-content: end;
+  }
+
+  &Info {
+    margin: 0px 10px;
+    font-size: 12px;
+
+    &__date {
+      margin:0;
+    }
+
+    &__category {
+
+    }
+  }
+  &__value {
+    font-size: 17px;
+  }
+
+  &Description {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+  }
+
+  &__actions {
+
+  }
+
+  ::ng-deep .mat-icon-button {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+
+}
+

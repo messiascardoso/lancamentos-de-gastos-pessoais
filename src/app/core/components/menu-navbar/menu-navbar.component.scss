@@ -1,0 +1,27 @@
+@import '../../../styles/variables/colors.scss';
+
+.menuNavbar {
+  padding: 10px 0px;
+  list-style: none;
+  &__item {
+    padding: 10px 0px 10px 26px;
+    border-bottom: solid 1px #5f7290;
+    display: flex;
+    align-items: center;
+    color: #ffff;
+    transition: all 0.5s;
+
+    &:hover {
+      color: #5f7290;
+    }
+  }
+  &__link {
+    text-decoration: none;
+    font-size: 16px;
+    color: currentColor;
+    margin-left: 10px;
+
+  }
+
+
+}
